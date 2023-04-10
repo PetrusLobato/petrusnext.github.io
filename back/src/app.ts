@@ -1,4 +1,3 @@
-import "express-async-errors";
 import express, { Application } from "express";
 import loginRoutes from "./routes/login.routes";
 import registerRouter from "./routes/register.routes";

@@ -1,7 +1,7 @@
 import { compare } from "bcryptjs";
 import jwt from "jsonwebtoken";
 import "dotenv/config";
-import {AppError} from "../errors/appError";
+import {AppError} from "../errors/AppError";
 import { ILoginResponse, Ilogin } from "../interface/global";
 import { User } from "../entities/user.entities";
 import { AppDataSource } from "../data-source";

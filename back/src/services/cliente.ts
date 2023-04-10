@@ -1,6 +1,6 @@
 import { AppDataSource } from "../data-source";
 import { Client } from "../entities/client.entities";
-import { AppError } from "../errors/appError";
+import { AppError } from "../errors/AppError";
 import { IClient, IClientResponse } from "../interface/global";
 import { clienteSchemaResponse } from "../schemas/client.schema";
 
