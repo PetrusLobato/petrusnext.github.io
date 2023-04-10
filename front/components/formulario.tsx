@@ -17,6 +17,7 @@ import { formLogin } from "@/validations/validation"
 import { IUserLogin } from "@/types"
 import Register from "./register"
 import { useAuth } from "@/contexts/globalContexts"
+import { signIn } from "next-auth/react"
 
 
 
@@ -61,7 +62,7 @@ const Formulario= () => {
                 </InputGroup>
                 {!errorPassword ? (<FormErrorMessage>{errors.password?.message}</FormErrorMessage>) : (<FormHelperText>Digite sua senha</FormHelperText>)}
             </FormControl>
-
+            <Button variant={"disabled"} onClick={() => signIn("github", {callbackUrl: `${window.location.origin}/dashboard`})}>GitHub</Button>
         
             <Register/>
 
