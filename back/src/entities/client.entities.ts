@@ -18,6 +18,9 @@ export class Client {
 
     @Column()
     email: string
+
+    @Column({ default: true })
+    isActive: boolean;
     
     @CreateDateColumn()
     createDateAtt: Date

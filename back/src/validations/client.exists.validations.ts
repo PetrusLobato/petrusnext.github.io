@@ -5,7 +5,7 @@ import { Client } from "../entities/client.entities";
 
 
 
-export const userExistsValidation = async (
+export const clientExistsValidation = async (
     req: Request,
     res: Response,
     next: NextFunction
